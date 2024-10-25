@@ -21,6 +21,11 @@ namespace PlantTrees.Controllers
 
             var planter = await _context.Planters.FindAsync(tree.IdPlanter);
 
+            if (planter == null)
+            {
+                return NotFound();
+            }
+
             _context.Add(tree);
             planter.PlantedTrees += tree.AmountPlanted;
 
@@ -73,6 +78,11 @@ namespace PlantTrees.Controllers
             }
 
             var planter = _context.Planters.Find(treeDB.IdPlanter);
+
+            if(planter == null)
+            {
+                throw new Exception();
+            }
 
             planter.PlantedTrees -= treeDB.AmountPlanted;
 

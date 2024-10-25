@@ -53,6 +53,7 @@ namespace PlantTrees.Controllers
             planterDB.Age = planter.Age;
             planterDB.Country = planter.Country;
             planterDB.Email = planter.Email;
+            planterDB.Birth = planter.Birth;
 
 
             _context.Planters.Update(planterDB);
