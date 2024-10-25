@@ -6,53 +6,171 @@ html {
   html {
     font-size: 16px;
   }
+
+    .text-center{
+        width: 60vw;
+    }
 }
 
-.text-center{
-    margin: auto;
-    width: 40vw;
+/*Genereal*/
+
+body {
+    background-color: white;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #053410;
+}
+
+/*Navbar*/
+.child-nav-bar a, .navbar-toggler {
+    color: white;
+}
+
+a.navbar-brand {
+    font-size: 25px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: flex;
     align-items: center;
+    gap: 8px;
+}
+
+.nav-link:hover {
+    color: #D8FFD3;
+}
+
+.divnavbar {
+    width: 100vw;
+    background-color: #06473D;
+    display: flex;
+    flex-direction: row;
+    padding-right: 25px;
+}
+
+.material-symbols-outlined {
+    margin-left: 20px
+}
+
+span.material-symbols-outlined {
+    margin-top: 0px;
+}
+
+.child-nav-bar {
+    margin-left: 70px;
+}
+
+
+/*Main*/
+
+#containerIndex{
+    display:flex;
+    width: 100vw;
+    height: 80%;
+}
+
+.text-center {
+    padding: 40px;
+    margin: auto;
+    max-width: 80vw;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .text-center h1 {
     margin-bottom: 20px;
     font-weight: 500;
-    color: #2B412B;
+    color: #053410;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 10px;
 }
 
-.text-center .green-btn{
-    margin-top: 20px;
+.text-center p {
+    color: #053410;
 }
 
 .spanText {
     font-weight: bold;
-    color: #2B412B;
-
+    color: #053410;
 }
+
+.pIndex{
+    margin-top: 40px;
+}
+
+/*Btn*/
 
 .green-btn {
     color: white;
-    background-color: #366B36;
+    background-color: #06473D;
     border: none;
+}
+
+.red-btn {
+    color: white;
+    background-color: #D51417;
+    border: none;
+}
+
+.red-btn:hover {
+    background-color: #6E0003;
+    color: white
 }
 
 .green-btn:hover {
     color: white;
-    background-color: #235923;
+    background-color: #032620;
 }
+
+.text-center .green-btn, .text-center .red-btn {
+    margin-top: 40px;
+}
+
+/*Forms*/
 
 .formSession{
     margin-bottom: 15px;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
+.forms {
+    width: 100vw;
+    background-color: white;
+    padding: 50px;
+    align-items: center;
 }
 
-body {
-  margin-bottom: 60px;
+.fatherForms{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formSession{
+    width: 800px;
+    max-width: 80vw;
+}
+
+h1.redH1  {
+    color: #D51417;
+}
+
+
+/*Style for GetPlanters*/
+
+.listPlanters{
+    width: 800px;
+    max-width: 80vw;
 }

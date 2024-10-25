@@ -1,5 +1,7 @@
 using PlantTrees.Context;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using PlantTrees.Entities;
 
 
 var builder = WebApplication.CreateBuilder(args);

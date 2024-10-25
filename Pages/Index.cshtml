@@ -3,24 +3,31 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">  Welcome to Plant Trees  </h1>
-    <p class="pIndex">
-        Hello, my name is Lucas. I created this site to study and practice .NET,
-        thinking about the large wildfires we've had recently, caused by us humans. 
-        It's only fair that we try to restore everything we've burned or destroyed in recent times. 
-        Of course, this is an individual initiative, but it's an idea for a project. Thank you for visiting.
-    </p>
-    <p>
-        On the <span class="spanText">"Create New Planter"</span> button, you can register to become a new planter, and once created,
-        you will see your name in <span class="spanText">"View All Planters"</span>, where all registered planters are listed.
-        On the <span class="spanText">"Plant Your Tree"</span> button, you can create your tree, but remember that you need to be registered in
-        <span class="spanText">"Create New Planter"</span> first to be able to plant a tree.
-    </p>
-
-    <a asp-page="Create" class="btn green-btn">Create New Planter</a>
-    <a asp-page="GetPlanters" class="btn green-btn">View All Planters</a>
-    <a asp-page="CreateTrees" class="btn green-btn">Plant You Tree</a>
-
+<div id="containerIndex">
+    <div class="text-center">
+        <h1 class="display-4">  Welcome to Plant Trees  </h1>
+        <p>
+            Hello, my name is Lucas. I created this site to study and practice .NET,
+            thinking about the large wildfires we've had recently, caused by us humans.
+            It's only fair that we try to restore everything we've burned or destroyed in recent times.
+            Of course, this is an individual initiative, but it's an idea for a project. Thank you for visiting.
+        </p>
+        <p class="pIndex">
+            On the <span class="spanText">"Create New Planter"</span> button, you can register to become a new planter, and once created,
+            you will see your name in <span class="spanText">"View All Planters"</span>, where all registered planters are listed.
+            On the <span class="spanText">"Plant Your Tree"</span> button, you can create your tree, but remember that you need to be registered in
+            <span class="spanText">"Create New Planter"</span> first to be able to plant a tree.
+        </p>
+        <p class="pIndex">
+            If you enter any incorrect data, don't worry. We have the Delete Planter page where you can delete your account to start fresh, or the Edit Planter page to update some information.
+        </p>
+        <div class="divBtn">
+            <a asp-page="Create" class="btn green-btn">Create New Planter</a>
+            <a asp-page="GetPlanters" class="btn green-btn">View All Planters</a>
+            <a asp-page="CreateTrees" class="btn green-btn">Plant You Tree</a>
+            <a asp-page="DeletePlanter" class="btn red-btn">Delete Planter</a>
+        </div>
+    </div>
 </div>
+
+

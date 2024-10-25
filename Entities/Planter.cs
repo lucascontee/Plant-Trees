@@ -7,7 +7,13 @@ namespace PlantTrees.Entities
         public int Id { get; set; }
 
         [Required]
-        public string Cpf { get; set; }
+        public string Username { get; set; }
+
+        [Required]
+        public string Password { get; set; }
+
+        [EmailAddress]
+        public string Email { get; set; }
 
         [Required]
         public string Name { get; set; }
@@ -19,7 +25,10 @@ namespace PlantTrees.Entities
         public int Age { get; set; }
 
         [Required]
-        public string Nationality { get; set; }
+        public DateTime Birth { get; set; }
+
+        [Required]
+        public string Country { get; set; }
         public int PlantedTrees { get; set; } = 0;
 
     }

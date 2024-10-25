@@ -22,7 +22,7 @@ namespace PlantTrees.Pages
 
         public async Task OnGetAsync()
         {
-            Planters = await _context.Planters.ToListAsync();
+            Planters = await _context.Planters.OrderByDescending(p => p.PlantedTrees).ToListAsync();
         }
     }
     

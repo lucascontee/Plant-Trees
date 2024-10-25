@@ -4,35 +4,34 @@
     ViewData["Title"] = "Planters List";
 }
 
-<h1>Planters</h1>
+<div class="fatherForms">
+    <div class="listPlanters">
+        <h1>Planters</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>LastName</th>
-            <th>Age</th>
-            <th>Nationality</th>
-            <th>CPF</th>
-            <th>Planted Trees</th>
-        </tr>
-    </thead>
 
-    <tbody>
-        @foreach (var i in Model.Planters)
-        {
-            <tr> 
-               <td>@i.Id</td>
-               <td>@i.Name</td>
-               <td>@i.LastName</td>
-               <td>@i.Age</td>
-               <td>@i.Nationality</td>
-               <td>@i.Cpf</td>
-               <td>@i.PlantedTrees</td>
-            </tr>
-        }
-    </tbody>
-</table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                    <th>Planted Trees</th>
+                </tr>
+            </thead>
 
-<a asp-page="Create" class="btn green-btn">Create New Planter</a>
+            <tbody>
+                @foreach (var i in Model.Planters)
+                {
+                    <tr> 
+                       <td>@i.Name @i.LastName</td>
+                       <td>@i.Age</td>
+                       <td>@i.Country</td>
+                       <td>@i.PlantedTrees</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a asp-page="Create" class="btn green-btn">Create New Planter</a>
+    </div>
+        
+</div>

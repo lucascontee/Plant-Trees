@@ -9,51 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PlantTrees
 build_property.RootNamespace = PlantTrees
-build_property.ProjectDir = C:\Users\lucas\Documents\estudos\c#-dio\PlantTrees\PlantTrees\
+build_property.ProjectDir = C:\Users\lucas\Documents\estudos\c#-dio\PlantTreesSystem\PlantTrees\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lucas\Documents\estudos\c#-dio\PlantTrees\PlantTrees
+build_property.MSBuildProjectDirectory = C:\Users\lucas\Documents\estudos\c#-dio\PlantTreesSystem\PlantTrees
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTrees/PlantTrees/Pages/Create.cshtml]
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTrees/PlantTrees/Pages/CreateTrees.cshtml]
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/CreateTrees.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlVHJlZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTrees/PlantTrees/Pages/Error.cshtml]
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/DeletePlanter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlUGxhbnRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTrees/PlantTrees/Pages/GetPlanters.cshtml]
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/GetPlanters.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2V0UGxhbnRlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTrees/PlantTrees/Pages/Index.cshtml]
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTrees/PlantTrees/Pages/Privacy.cshtml]
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTrees/PlantTrees/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTrees/PlantTrees/Pages/_ViewImports.cshtml]
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTrees/PlantTrees/Pages/_ViewStart.cshtml]
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTrees/PlantTrees/Pages/Shared/_Layout.cshtml]
+[C:/Users/lucas/Documents/estudos/c\#-dio/PlantTreesSystem/PlantTrees/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1co4jhpq3v

@@ -11,8 +11,8 @@ using PlantTrees.Context;
 namespace PlantTrees.Migrations
 {
     [DbContext(typeof(PlantTreesContext))]
-    [Migration("20241009222647_CreateTablesPlantTree")]
-    partial class CreateTablesPlantTree
+    [Migration("20241022044525_AddEmailColumn")]
+    partial class AddEmailColumn
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,7 +35,7 @@ namespace PlantTrees.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
-                    b.Property<string>("Cpf")
+                    b.Property<string>("Country")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -47,12 +47,16 @@ namespace PlantTrees.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Nationality")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PlantedTrees")
                         .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

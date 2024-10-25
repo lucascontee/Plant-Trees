@@ -3,35 +3,44 @@
 @{
     ViewData["Title"] = "Create Trees";
 }
+<div class="fatherForms">
+    <div class="forms">
+        <h1>Create Tree</h1>
 
-<h1>Create Tree</h1>
+        <form method="post">
+            <div class="formSession">
+                <label asp-for="Tree.TreeName" class="control-label">Tree Name</label>
+                <input type="text" asp-for="Tree.TreeName" class="form-control" />
+                <span asp-validation-for="Tree.TreeName" class="text-danger"></span>
+            </div>
 
-<form method="post">
-    <div class="formSession">
-        <label asp-for="Tree.TreeName" class="control-label">Tree Name</label>
-        <input type="text" asp-for="Tree.TreeName" class="form-control" />
-        <span asp-validation-for="Tree.TreeName" class="text-danger"></span>
+            <div class="formSession">
+                <label asp-for="Tree.PlantationCity" class="control-label">Plantation City</label>
+                <input type="text" asp-for="Tree.PlantationCity" class="form-control" />
+                <span asp-validation-for="Tree.PlantationCity" class="text-danger"></span>
+            </div>
+
+            <div class="formSession">
+                <label asp-for="Tree.AmountPlanted" class="control-label">Amount Planted</label>
+                <input type="text" asp-for="Tree.AmountPlanted" class="form-control" />
+                <span asp-validation-for="Tree.AmountPlanted" class="text-danger"></span>
+            </div>
+
+            <div class="formSession">
+                <label asp-for="Planter.Username" class="control-label"></label>
+                <input type="text" asp-for="Planter.Username" class="form-control" />
+                <span asp-validation-for="Planter.Username" class="text-danger"></span>
+            </div>
+
+            <div class="formSession">
+                <label asp-for="Planter.Password" class="control-label"></label>
+                <input type="password" asp-for="Planter.Password" class="form-control" />
+                <span asp-validation-for="Planter.Password" class="text-danger"></span>
+            </div>
+
+            <div class="formSession">
+                <button type="submit" class="btn green-btn">Create Planted Tree</button>
+            </div>
+        </form>
     </div>
-
-    <div class="formSession">
-        <label asp-for="Tree.PlantationCity" class="control-label">Plantation City</label>
-        <input type="text" asp-for="Tree.PlantationCity" class="form-control" />
-        <span asp-validation-for="Tree.PlantationCity" class="text-danger"></span>
-    </div>
-
-    <div class="formSession">
-        <label asp-for="Tree.AmountPlanted" class="control-label">Amount Planted</label>
-        <input type="text" asp-for="Tree.AmountPlanted" class="form-control" />
-        <span asp-validation-for="Tree.AmountPlanted" class="text-danger"></span>
-    </div>
-
-    <div class="formSession">
-        <label asp-for="Tree.IdPlanter" class="control-label">Your ID</label>
-        <input type="text" asp-for="Tree.IdPlanter" class="form-control" />
-        <span asp-validation-for="Tree.IdPlanter" class="text-danger"></span>
-    </div>
-
-    <div class="formSession">
-        <button type="submit" class="btn green-btn">Create Planter</button>
-    </div>
-</form>
+</div>

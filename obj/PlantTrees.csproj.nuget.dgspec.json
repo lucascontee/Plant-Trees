@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\Documents\\estudos\\c#-dio\\PlantTrees\\PlantTrees\\PlantTrees.csproj": {}
+    "C:\\Users\\lucas\\Documents\\estudos\\c#-dio\\PlantTreesSystem\\PlantTrees\\PlantTrees.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\Documents\\estudos\\c#-dio\\PlantTrees\\PlantTrees\\PlantTrees.csproj": {
+    "C:\\Users\\lucas\\Documents\\estudos\\c#-dio\\PlantTreesSystem\\PlantTrees\\PlantTrees.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\Documents\\estudos\\c#-dio\\PlantTrees\\PlantTrees\\PlantTrees.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\Documents\\estudos\\c#-dio\\PlantTreesSystem\\PlantTrees\\PlantTrees.csproj",
         "projectName": "PlantTrees",
-        "projectPath": "C:\\Users\\lucas\\Documents\\estudos\\c#-dio\\PlantTrees\\PlantTrees\\PlantTrees.csproj",
+        "projectPath": "C:\\Users\\lucas\\Documents\\estudos\\c#-dio\\PlantTreesSystem\\PlantTrees\\PlantTrees.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\Documents\\estudos\\c#-dio\\PlantTrees\\PlantTrees\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\Documents\\estudos\\c#-dio\\PlantTreesSystem\\PlantTrees\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -57,6 +61,12 @@
               "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
             },

@@ -46,11 +46,13 @@ namespace PlantTrees.Controllers
                 return NotFound();
             }
 
-            planterDB.Cpf = planter.Cpf;
+            planterDB.Username = planter.Username;
             planterDB.Name = planter.Name;
+            planterDB.Password = planter.Password;
             planterDB.LastName = planter.LastName;
             planterDB.Age = planter.Age;
-            planterDB.Nationality = planter.Nationality;
+            planterDB.Country = planter.Country;
+            planterDB.Email = planter.Email;
 
 
             _context.Planters.Update(planterDB);
