@@ -31,10 +31,29 @@ namespace PlantTrees.Pages
         {
             var planter = await _context.Planters.FirstOrDefaultAsync(p => p.Username == Planter.Username);
 
-            if (!VerifyPassword(Planter.Password, planter.Password))
+            if (planter == null)
             {
-                ModelState.AddModelError("Planter.Password", "Invalid password.");
+                ModelState.AddModelError("Planter.Username", "Incorrect Username.");
                 return Page();
+            }
+
+            var storedPassword = planter.Password.Split(':');
+            var salt = Convert.FromBase64String(storedPassword[0]);
+            var storedHash = Convert.FromBase64String(storedPassword[1]);
+
+            using (var hmac = new HMACSHA512(salt))
+            {
+                var passwordBytes = Encoding.UTF8.GetBytes(Planter.Password);
+                var computedHash = hmac.ComputeHash(passwordBytes);
+
+                for (int i = 0; i < computedHash.Length; i++)
+                {
+                    if (computedHash[i] != storedHash[i])
+                    {
+                        ModelState.AddModelError("Planter.Password", "Incorrect Password.");
+                        return Page();
+                    }
+                }
             }
 
             Tree.IdPlanter = planter.Id;
@@ -44,23 +63,6 @@ namespace PlantTrees.Pages
 
             _context.SaveChanges();
             return RedirectToPage("./GetPlanters");
-        }
-
-        private bool VerifyPassword(string password, string storedPassword)
-        {
-            var parts = storedPassword.Split(':');
-            if (parts.Length != 2) return false;
-
-            var salt = Convert.FromBase64String(parts[0]);
-            var hash = Convert.FromBase64String(parts[1]);
-
-            using (var hmac = new HMACSHA512(salt))
-            {
-                var passwordBytes = Encoding.UTF8.GetBytes(password);
-                var computedHash = hmac.ComputeHash(passwordBytes);
-
-                return hash.SequenceEqual(computedHash);
-            }
         }
     }
 }
